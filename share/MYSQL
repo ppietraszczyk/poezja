@@ -1,0 +1,10 @@
+# tworzenie bazy
+CREATE DATABASE poezjaDB DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+
+
+# przełączenie bazy danych
+use poezjaDB;                                                            
+
+# tworzenie tabeli
+CREATE TABLE tabela ( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, imie VARCHAR(30) NOT NULL, email VARCHAR(50), tytul VARCHAR(50), tresc VARCHAR(2048));
+

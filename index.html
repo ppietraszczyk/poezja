@@ -1,0 +1,37 @@
+<!-- plik: index.html
+    autor: przem
+    data: 13-09-2016
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Language" content="pl">
+        <title>Kącik poezji</title>
+    </head>
+    <body>
+        
+        <CENTER>
+            <h1>Rzuć wierszykiem poeto!</h1>
+        </CENTER>
+        <CENTER>
+        <FORM ACTION="./doBazy.php" METHOD="POST" accept-charset="UTF-8">
+            <INPUT LANG="PL" TYPE="TEXT" NAME="tytul" VALUE="Tutaj wpisz tytuł wiersza">
+            <DL>               
+            <DD><TEXTAREA LANG="PL" NAME="wiersz" ROWS=11 COLS=60></TEXTAREA></DD>
+            </DL>
+            <INPUT LANG="PL" TYPE="TEXT" NAME="imie" VALUE="anonim">
+            <INPUT TYPE="SUBMIT" NAME="submitButton" Value="Submit"/>
+            
+        </FORM>
+            
+        <FORM ACTION="./naStrone.php" METHOD="GET">
+            
+            <CENTER>
+                <INPUT TYPE="SUBMIT" NAME="submitButton" Value="Odczyt z bazy"/>
+            </CENTER>
+        </FORM>    
+            
+        </CENTER>
+    </body>
+</html>
