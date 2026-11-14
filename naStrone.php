@@ -12,13 +12,14 @@
     <body>
         <CENTER>
         <h1>Dane z bazy</h1>
-        
+        </br></br><FORM ACTION='./index.html' METHOD='GET'><CENTER><INPUT TYPE='SUBMIT' NAME='submitButton' Value='Powrót do strony głównej'/></CENTER></FORM></br></br>
+
          <?php
 
 $servername = "mysql.ct8.pl";
-$username = "nazwa_użytkownika_bazy";
-$password = "haslo bazy danych";
-$dbname = "nazwa_bazy_danych;
+$username = "poezja";
+$password = "*******";
+$dbname = "poezja";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -50,8 +51,10 @@ if ($result->num_rows > 0) {
         echo "<br><br><br>"." znaków w wierszu: ".$dlugosc."  id: ".$row["id"]."<br>";
         echo "--------------------------------"."<br><br>";
     }
+    echo "</br></br><FORM ACTION='./index.html' METHOD='GET'><CENTER><INPUT TYPE='SUBMIT' NAME='submitButton' Value='Powrót do strony głównej'/></CENTER></FORM>";
 } else {
     echo "0 results";
+    echo "</br></br><FORM ACTION='./index.html' METHOD='GET'><CENTER><INPUT TYPE='SUBMIT' NAME='submitButton' Value='Powrót do strony głównej'/></CENTER></FORM>";
 }
 $conn->close();
 
